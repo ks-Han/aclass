@@ -6,5 +6,6 @@ public class Chap04Run {
 		service.method1();
 		
 		// UserService 객체에 있는 method1() 호출
+		// ㅇㅇ 맞음
 	}
 }
