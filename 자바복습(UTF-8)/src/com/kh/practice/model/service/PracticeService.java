@@ -46,18 +46,34 @@ public class PracticeService {
 		// a, null, c, d 가 아닌
 		// a, b, c, null 형태로 배열이 형성되어야 함.
 
+		// 선생님 방식
 		Student tmp_list = null;
 		if (index >= 0 && index < list.length) {
 			tmp_list = list[index];
-
-			System.arraycopy(list, index + 1, list, index, list.length - (index + 1));
-
-			if (size % 3 == 0 && size != 0)
-				list[list.length - 1] = null;
 			
+			for (int i = index; i < list.length - 1; i++) {
+				list[i] = list[i + 1];
+
+				if (list[i] == null) {
+					break;
+				}
+			}
 			size--;
 		}
-		
+
+		// 내 방식
+//		Student tmp_list = null;
+//		if (index >= 0 && index < list.length) {
+//			tmp_list = list[index];
+//
+//			System.arraycopy(list, index + 1, list, index, list.length - (index + 1));
+//
+//			if (size % 3 == 0 && size != 0)
+//				list[list.length - 1] = null;
+//			
+//			size--;
+//		}
+
 		return tmp_list;
 	}
 
