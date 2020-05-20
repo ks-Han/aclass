@@ -10,10 +10,11 @@ public class InputZeroException extends Exception {
 	// 만약 UnChecked Exception으로 만들 경우
 	// RuntimeException을 상속 받음
 	
+
 	public InputZeroException() {
-		super();
+		
 	}
-	
+
 	public InputZeroException(String msg) {
 		super(msg);
 	}
