@@ -6,6 +6,7 @@ public class Part2Run {
 
 	public static void main(String[] args) {
 		new Menu().mainMenu();
+			
 	}
 
 }
